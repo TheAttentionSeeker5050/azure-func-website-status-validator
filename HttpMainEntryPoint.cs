@@ -33,7 +33,7 @@ namespace website_status_checker
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "validate-urls")] HttpRequest req
         )
         {
-            _logger.LogInformation("C# HTTP trigger function processed a request.");
+            _logger.LogInformation("Request received to validate urls @ " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " UTC.");
 
             // declare a mutable list for the single website responses
             List<SingleWebsiteStatusResponse> websiteListResponse = new List<SingleWebsiteStatusResponse>();
@@ -86,7 +86,7 @@ namespace website_status_checker
                         websiteStatus = "Down";
                     }
 
-                    // _logger.LogWarning($"Website {website.Name} status: {websiteStatus}");
+                    _logger.LogInformation($"Website {website.Name} status: {websiteStatus}");
 
                     // create a new single website status response
                     SingleWebsiteStatusResponse singleWebsiteStatusResponse = new SingleWebsiteStatusResponse
