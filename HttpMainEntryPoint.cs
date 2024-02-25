@@ -30,7 +30,7 @@ namespace website_status_checker
 
         [Function("HttpMainEntryPoint")]
         public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "validate-urls")] HttpRequest req
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "validate-urls")] HttpRequest req
         )
         {
             _logger.LogInformation("Request received to validate urls @ " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " UTC.");
