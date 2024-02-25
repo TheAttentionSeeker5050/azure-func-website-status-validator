@@ -37,4 +37,4 @@ The subsequent response must be the following:
 # (if return http 401 or 403), or "down" (if not ok)
 ```
 
-*Note*: This url accepts both POST and GET requests.
+**Note**: This url accepts both POST and GET requests.
