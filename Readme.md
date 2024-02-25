@@ -33,8 +33,8 @@ The subsequent response must be the following:
     ]
 }
 
-#statuses can be "up" (if return fetch ok status), "unauthorized" (if return http 401 or 403),
-# or "down" (if not ok)
+#statuses can be "up" (if return fetch ok status), "unauthorized" 
+# (if return http 401 or 403), or "down" (if not ok)
 ```
 
 *Note*: This url accepts both POST and GET requests.
