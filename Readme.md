@@ -8,7 +8,7 @@ The request sent to the url path /validate-urls must have the following body:
 
 ```bash
 # requests body
-body: {
+{
     urls: [
         { url: your-website-url, name: wesbite-name },
         { url: your-website-url, name: wesbite-name },
@@ -23,7 +23,7 @@ The subsequent response must be the following:
 
 ```bash
 # response body
-body: {
+{
     urls: [
         { url: your-website-url, name: wesbite-name, status: your-website-status },
         { url: your-website-url, name: wesbite-name, status: your-website-status },
