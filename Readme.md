@@ -35,3 +35,5 @@ body: {
 
 #statuses can be "up" (if return fetch ok status), "unauthorized" (if return http 401 or 403), and "down" (if not ok)
 ```
+
+*Note*: This url accepts both POST and GET requests.
