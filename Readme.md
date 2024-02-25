@@ -33,5 +33,5 @@ body: {
     ]
 }
 
-#statuses can be "online" (if return fetch ok status), "unauthorized" (if return http 401 or 403), "offline" (if not ok), and "undefined" (anything else)
+#statuses can be "up" (if return fetch ok status), "unauthorized" (if return http 401 or 403), and "down" (if not ok)
 ```

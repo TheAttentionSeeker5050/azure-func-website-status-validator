@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace website_status_checker.model
 {
-    public class WebsiteStatusResponse
+    public class SingleWebsiteStatusResponse
     {
         [JsonPropertyName("name")]
         public string Name { get; set; }
@@ -17,5 +17,11 @@ namespace website_status_checker.model
 
         [JsonPropertyName("status")]
         public string Status { get; set; }
+    }
+
+    public class WebsiteListResponse
+    {
+        [JsonPropertyName("urls")]
+        public List<SingleWebsiteStatusResponse> Urls { get; set; }
     }
 }
